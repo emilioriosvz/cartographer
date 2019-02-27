@@ -4,7 +4,6 @@ const { parseParams } = require('../utils')
 const getUrl = (query, options) => {
   const { params } = options
   const parsedParams = parseParams({ ...params, address: query })
-  console.log(`https://maps.googleapis.com/maps/api/geocode/json?${parsedParams}`)
   return `https://maps.googleapis.com/maps/api/geocode/json?${parsedParams}`
 }
 
