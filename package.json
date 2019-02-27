@@ -1,0 +1,37 @@
+{
+  "name": "cartographer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilioriosvz/cartographer"
+  },
+  "homepage": "https://github.com/emilioriosvz/cartographer#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geo-search",
+    "geocoding",
+    "geolocation",
+    "google-maps",
+    "openstreetmap",
+    "geojson",
+    "osm",
+    "maps",
+    "osm-data",
+    "openstreetmap-data"
+  ],
+  "author": "Emilio R",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "standard": "^12.0.1"
+  }
+}
