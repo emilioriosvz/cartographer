@@ -2,7 +2,7 @@
 This package tries to make integration with different map providers easier by returning the same result whether you are using gmaps, osm, etc.
 
 ## Install
-  `npm i cartograph`
+  `npm i cartographer`
 
 ## How to use
 
@@ -10,7 +10,7 @@ This package tries to make integration with different map providers easier by re
 
 Get [here](https://developers.google.com/maps/documentation/javascript/get-api-key) your API Key
 ```js
-const { createGmaps } = require('cartograph')
+const { createGmaps } = require('cartographer')
 const gmaps = createGmaps({
   params: { key: 'YOUR_GMAPS_API_KEY_HERE' }
 })
@@ -20,7 +20,7 @@ const result = await gmaps.search('Barcelona') // returns an array of locations.
 
 ### Open Street Map
 ```js
-const { createOSM } = require('cartograph')
+const { createOSM } = require('cartographer')
 const osm = createOSM()
 const result = await osm.search('Barcelona') // returns an array of locations.
 ```
