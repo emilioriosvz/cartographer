@@ -1,6 +1,6 @@
 {
   "name": "cartographer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GeoSearch through different providers",
   "main": "src/app.js",
   "repository": {
