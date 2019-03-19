@@ -32,7 +32,7 @@ const parser = data => {
   if (data.type === 'GeometryCollection') return data
 
   const parseResult = result => {
-    const { lon, lat, display_name: address, boundingbox } = result
+    const { lon, lat, display_name: address, boundingbox = [] } = result
     return {
       address,
       lon,
