@@ -32,11 +32,13 @@ const parser = data => {
   if (data.type === 'GeometryCollection') return data
 
   const parseResult = result => {
+    if (!result || result.error === 'Unable to geocode') return []
     const { lon, lat, display_name: address, boundingbox = [] } = result
+
     return {
       address,
-      lon,
-      lat,
+      lon: parseFloat(lon),
+      lat: parseFloat(lat),
       bbox: [
         [parseFloat(boundingbox[0]), parseFloat(boundingbox[2])], // south - west
         [parseFloat(boundingbox[1]), parseFloat(boundingbox[3])] // north - east
